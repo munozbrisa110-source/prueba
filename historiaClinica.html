@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./estilos/basico.css">
     <link rel="stylesheet" href="./estilos/base.css">
+    <link rel="stylesheet" href="./estilos/index.css">
+    <link rel="stylesheet" href="./estilos/turnos.css">
 
    <!-- Scripts JS -->
     <script defer src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -47,13 +49,13 @@
     <!-- CONTENIDO PRINCIPAL -->
     <main class="py-4">
         <section class="container">
-            <h1 class="titulo-principal text-center mt-4 mb-4">Registro de Historia Clínica</h1>
+            <h1 class="titulo-turnos titulo-principal text-center mt-4 mb-4">Registro de Historia Clínica</h1>
 
             <!-- Formulario de Consulta Médica -->
             <div class="row justify-content-center">
                 <article class="col-12 col-lg-10">
-                    <form id="formularioHistoria" class="row g-3 p-4 rounded-4 shadow-sm bg-white border">
-                        <h2 class="col-12 fs-4 fw-bold">Nueva Atención Médica</h2>
+                    <form id="formularioTurno" class="row g-3 p-4 rounded-4 shadow-sm bg-white border">
+                        <h2 class="col-12">Nueva Atención Médica</h2>
 
                         <div class="col-12 col-md-6">
                             <label for="selectMascotaHC" class="form-label fw-semibold">Mascota Paciente *</label>
@@ -89,7 +91,7 @@
             <!-- Filtro de Historial por Mascota -->
             <section class="mt-5 py-3">
                 <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-2 mb-3">
-                    <h2 class="fs-4 fw-bold mb-0">Historial Médico Registrado</h2>
+                    <h2 id = "titulo-turnos" class="titulo-principal">Historial Médico Registrado</h2>
                     <div class="d-flex align-items-center gap-2">
                         <label for="filtroMascotaHC" class="fw-semibold text-nowrap">Filtrar por Mascota:</label>
                         <select class="form-select" id="filtroMascotaHC">
@@ -98,7 +100,7 @@
                     </div>
                 </div>
 
-                <div class="table-responsive bg-white rounded-4 shadow-sm p-3 border">
+                <div class="table-responsive card rounded-4 shadow-sm p-3">
                     <table class="table table-bordered table-hover align-middle mb-0">
                         <thead class="table-light">
                             <tr>
@@ -108,7 +110,7 @@
                                 <th>Observaciones / Diagnóstico</th>
                             </tr>
                         </thead>
-                        <tbody id="tablaHistoriaClinica">
+                        <tbody id="tablaTurnos">
                             <!-- Filas dinámicas -->
                         </tbody>
                     </table>

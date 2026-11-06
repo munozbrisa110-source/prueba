@@ -68,7 +68,7 @@
             // menu para visitantes anónimos
             htmlMenu += `
                 <li class="nav-item ms-lg-2">
-                    <a href="./login.html" class="btn btn-light text-primary btn-sm px-3 py-1 fw-bold rounded-3 mt-2 mt-lg-0">
+                    <a href="./login.html" class="btn btn-light  btn-sm px-3 py-1 fw-bold rounded-3 mt-2 mt-lg-0" style="background-color: var(--color-violeta-claro3: #ccb1ff);">
                         Iniciar Sesión
                     </a>
                 </li>

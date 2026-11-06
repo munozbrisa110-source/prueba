@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./estilos/basico.css">
     <link rel="stylesheet" href="./estilos/base.css">
+    <link rel="stylesheet" href="./estilos/index.css">
+    <link rel="stylesheet" href="./estilos/turnos.css">
 
     <!-- Scripts -->
     <script defer src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -47,13 +49,13 @@
     <!-- CONTENIDO PRINCIPAL -->
     <main class="py-4">
         <section class="container">
-            <h1 class="titulo-principal text-center mt-4 mb-4">Gestión de Turnos Médicos</h1>
+            <h1 class="titulo-turnos titulo-principal text-center mt-4 mb-4">Gestión de Turnos Médicos</h1>
 
             <!-- Formulario para Agendar Turno -->
             <div class="row justify-content-center">
                 <article class="col-12 col-lg-10">
                     <form id="formularioTurno" class="row g-3 p-4 rounded-4 shadow-sm bg-white border">
-                        <h2 class="col-12 fs-4 fw-bold">Agendar Nuevo Turno</h2>
+                        <h2 class="col-12  ">Agendar Nuevo Turno</h2>
 
                         <div class="col-12 col-md-6">
                             <label for="selectMascota" class="form-label fw-semibold">Mascota *</label>
@@ -74,21 +76,21 @@
                             <input type="datetime-local" class="form-control" id="fechaHora" required>
                         </div>
 
-                        <div class="col-12 text-end mt-4">
-                            <button type="submit" class="btn btn-primary px-4 py-2 fw-bold">Agendar Turno</button>
+                        <div class="col-12 text-end ">
+                            <button type="submit" class="btn btn-primary ">Agendar Turno</button>
                         </div>
                     </form>
                 </article>
             </div>
 
             <!-- Tabla de Listado -->
-            <section class="mt-5 py-3">
-                <h2 class="fs-4 fw-bold mb-3">
+            <section class="mt-5 py-3 tabla tablaTurnos">
+                <h2 class="fs-4 fw-bold mb-3 titulo-turnos">
                     Turnos Agendados
-                    <span id="totalTurnos" class="ms-2 badge bg-primary rounded-pill">0</span>
+                    <span id="totalTurnos" class="ms-2 badge rounded-pill">0</span>
                 </h2>
 
-                <div class="table-responsive bg-white rounded-4 shadow-sm p-3 border">
+                <div class="table-responsive card rounded-4 shadow-sm p-3">
                     <table class="table table-bordered table-hover align-middle mb-0">
                         <thead class="table-light">
                             <tr>
